@@ -1,5 +1,6 @@
 {
   "name": "dashboard",
+  "homepage": "https://farhaghallab3.github.io/dashboard/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,6 +9,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
+
   },
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
