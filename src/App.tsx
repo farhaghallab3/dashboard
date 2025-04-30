@@ -20,7 +20,7 @@ function App() {
 
   return (
     <CourseProvider>
-      <BrowserRouter>
+      <BrowserRouter basename='/dashboard/'>
         <Toast ref={toast} />
         <Routes>
           <Route path="/" element={<Login toast={toast} />} />
