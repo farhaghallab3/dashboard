@@ -43,18 +43,19 @@ const Login = ({ toast }: LoginProps) => {
   };
 
   return (
-    <div className="min-h-screen flex">
+    <div className="min-h-screen flex flex-col md:flex-row">
       {/* Left image */}
-      <div className="hidden md:flex w-1/2 bg-browen-100 justify-center items-center">
-        <img
-          src={image}
-          alt="Login Visual"
-          className="w-3/4 h-3/4 object-cover rounded-lg shadow-lg"
-        />
-      </div>
+      <div className="w-full md:w-1/2 flex justify-center items-center p-4 bg-browen-100">
+  <img
+    src={image}
+    alt="Login Visual"
+    className="w-full max-w-md object-cover rounded-lg shadow-lg"
+  />
+</div>
+
 
       {/* Right form */}
-      <div className="w-full md:w-1/2 flex items-center justify-center bg-white px-8">
+      <div className="w-full md:w-1/2 flex items-center justify-center bg-white px-8 py-8">
         <div className="max-w-md w-full space-y-6">
           <h2 className="text-3xl font-bold text-center text-orange-800">Sign In!</h2>
           <form onSubmit={handleLogin} className="space-y-4">
